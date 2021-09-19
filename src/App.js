@@ -92,7 +92,7 @@ const MartialArtsDB = {
     {
       name: "Buakaw Banchamek",
       image:
-        "https://lh3.googleusercontent.com/proxy/-CZfEijlKWUbDLogD_iE5oAnsBACKa2IYAbHsyPpZQSzQA7E4-1adgkJRbDEhu-ARzPXIFrlmcPWXiPdNWM_M2QYBejrZw9JlYRL0dpfle473R1cR05wFm22T6HvyQ",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0c/Picbuakaw.jpg",
       instagram: "https://www.instagram.com/buakaw1/"
     },
     {
@@ -190,11 +190,14 @@ export default function App() {
               alt=""
               class="responsive"
             />
-            <h1 className="artist_name"> {art.name}</h1>
+            <h1 className="artist_name">
+              <a href={art.instagram}>{art.name}</a>{" "}
+            </h1>
+
             <div className="artist_info"></div>
           </div>
         ))}
-        {/* </div> */}
+
         <div className="footer">
           Created for education purpose using React by Onkar Sarje
         </div>
